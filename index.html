@@ -3,39 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <title>Formulario</title>
 </head>
 <body>
-    <form action="">
-        <div>
-            <h2>Contactanos</h2>
+    <form action="" class="form-container">
+        <div class="form-title">
+            <h2>Formulario de contacto</h2>
         </div>
 
-        <div>
-            <div>
+        <div class="flex-row">
+            <div class="form-element">
                 <label for="nombre">Nombre</label>
                 <input type="text" name="nombre" id="nombre" placeholder="ingresa tu nombre" required>
             </div>
 
-            <div>
+            <div class="form-element">
                 <label for="telefono">Telefono</label>
                 <input type="tel" name="telefono" id="telefono" placeholder="ingresa tu telefono" required>
             </div>
 
         </div>
-        <div>
-            <div>
+        <div class="flex-row">
+            <div class="form-element">
                 <label for="correo">Correo electronico</label>
                 <input type="email" name="correo" id="correo" placeholder="ingresa tu correo" required>
             </div>
             
-            <div>
+            <div class="form-element">
                 <label for="direccion">Direccion</label>
                 <input type="text" name="direccion" id="direccion" placeholder="ingresa tu direccion" required>
             </div>
         </div>
            
-        <div>
+        <div class="form-element">
             <label for="mensaje">Mensaje</label>
             <textarea name="mensaje" id="mensaje">Mensaje</textarea>
         </div>
